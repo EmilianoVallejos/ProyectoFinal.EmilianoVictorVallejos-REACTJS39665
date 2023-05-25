@@ -8,23 +8,21 @@ import Checkout from './Componentes/Checkout'
 import { CartProvider } from './Componentes/CartContext/CartContext'
 
 function App(){
-  return ( 
-    <div>
-      <BrowserRouter>
-        <CartProvider>
-          <NavBar/>
-          <Routes>
-            <Route path='/' element={<ItemListContainer greeting={'Bienvenidos'}/>}/>
-            <Route path='/category/:categoryId' element={<ItemListContainer greeting= {"Productos por categoria"}/>}/>
-            <Route path='/item/:itemId' element={ <ItemDetailContainer/> } />
-            <Route path='/cart' element={<Cart/>}/>
-            <Route path='/checkout' element={<Checkout/>} />
-            <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
-          </Routes>
-        </CartProvider>   
-      </BrowserRouter>
-    </div>
-  );
+    return (<div>
+        <BrowserRouter>
+          <CartProvider>
+            <NavBar/>
+            <Routes>
+              <Route path='/' element={<ItemListContainer greeting={'Bienvenidos'}/>}/>
+              <Route path='/category/:categoryId' element={<ItemListContainer greeting= {"Productos por categoria"}/>}/>
+              <Route path='/item/:itemId' element={ <ItemDetailContainer/> } />
+              <Route path='/cart' element={<Cart/>}/>
+              <Route path='/checkout' element={<Checkout/>} />
+              <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
+            </Routes>
+          </CartProvider>   
+        </BrowserRouter>
+      </div> );
 }
 
 export default App

@@ -28,5 +28,5 @@ const ItemDetailContainer = () => {
               setLoading(false)
             })
           }, [ItemId])
-
+        }
 export default ItemDetailContainer
