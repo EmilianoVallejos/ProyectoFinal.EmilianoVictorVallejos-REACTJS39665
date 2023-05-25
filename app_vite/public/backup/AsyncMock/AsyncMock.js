@@ -1,11 +1,12 @@
 
+/*
 const products = [
 {
     id: "1",
     name: "Pro-Plan 18kg",
     price: 13000,
     category: "promociones", 
-    img: "/app_vite/public/imgs/productos-promociones/promociones1Edit.png",
+    img: "/app_vite/imgs/productos-promociones/promociones1Edit.png",
     stock: 10,
     description: "Alimento Balanceado. Perro Adulto. Raza Mediana."
 },
@@ -124,4 +125,4 @@ export const getProductById = (productId) => {
             resolve (products.find(prod => prod.id === productId))
             }, 2000)
         })
-}
+} */
