@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import ItemList from './ItemList'
 import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where, doc} from 'firebase/firestore'
 import { db } from '../firebase'
@@ -32,6 +31,5 @@ const ItemListContainer = ({greeting})=> {
                 setLoading(false)
             })    
     })
-  
 }
 export default ItemListContainer

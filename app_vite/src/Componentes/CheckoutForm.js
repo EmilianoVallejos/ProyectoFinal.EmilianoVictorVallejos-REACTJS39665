@@ -34,13 +34,13 @@ const CheckoutForm = ({onConfirm}) => {
                 />
             <label/>
             <div>
-                <button type='submit'> Crear Orden</button>    
+                <button type='submit'> Crear Orden </button>    
             </div>    
 
             </label>
         </form>
     </div>
-  )
+)
 }
 
 export default CheckoutForm

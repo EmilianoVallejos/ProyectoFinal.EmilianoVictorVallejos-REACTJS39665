@@ -8,12 +8,12 @@ const ItemDetailContainer = () => {
     const [product, setProduct] = useState (null)
     const [loading, setLoading] = useState (true)
 
-    const {ItemId} = useParams()
+    const {Id} = useParams()
   
     useEffect (()=> {
         setLoading(true)
 
-        const docRef = doc (db, 'products', ItemId)
+        const docRef = doc (db, 'products', Id)
 
         getDoc(docRef)
             .then (response =>{
@@ -27,6 +27,6 @@ const ItemDetailContainer = () => {
             .finally(()=>{
               setLoading(false)
             })
-          }, [ItemId])
+          }, [Id])
         }
 export default ItemDetailContainer
