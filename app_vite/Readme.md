@@ -25,3 +25,7 @@ ___
 
 <https://github.com/EmilianoVallejos>
 <https://www.linkedin.com/in/emiliano-v%C3%ADctor-vallejos-frontend/>
+
+___
+
+(https://es.digitaltrends.com/computadoras/hackers-pueden-alojar-malware-en-gif/)
