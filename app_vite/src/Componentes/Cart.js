@@ -22,6 +22,6 @@ const Cart = ()=> {
             <button onClick={()=>clearCart()}>Limpiar Carrito</button>
             <Link to='/checkout'>Checkout</Link>
         </div>
-    )
+        )
 }
 export default Cart

@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where, doc} from 'firebase/firestore'
-import { db } from '../firebase'
+import { db } from '../firebase' 
+import React from 'react'
+import ItemList from './ItemList'
 
 const ItemListContainer = ({greeting})=> {
     const [products, setProducts] = useState ([])
@@ -18,10 +20,11 @@ const ItemListContainer = ({greeting})=> {
         
         getDocs(collectionRef)
             .then(response => {
-                const productsAdapted = response.docs.map(docs =>{
+                const productsAdapted = response.docs.map(doc =>{
                     const data = doc.data()
                     return { id: doc.id, ...data}
                 })
+                console.log(productsAdapted, "Hooa")
                 setProducts(productsAdapted)
             })
             .catch(error => {
@@ -30,6 +33,11 @@ const ItemListContainer = ({greeting})=> {
             .finally(()=> {
                 setLoading(false)
             })    
-    })
+    }, [])
+    return(
+        <div>
+            <ItemList products={products}></ItemList> 
+        </div>
+    )
 }
 export default ItemListContainer
