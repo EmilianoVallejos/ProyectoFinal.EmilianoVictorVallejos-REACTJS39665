@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Item = ({description, title, image, price, stock}) => {
+const Item = ({id, title, image, price, stock, description}) => {
     return (
         <article>
             <header>
@@ -14,6 +14,9 @@ const Item = ({description, title, image, price, stock}) => {
             </picture>    
             <section>
                 <p>
+                    Descripcion del producto: {description}
+                </p>
+                <p>
                     Precio: ${price}
                 </p>
                 <p>
@@ -21,7 +24,7 @@ const Item = ({description, title, image, price, stock}) => {
                 </p>
             </section>
             <footer>
-                <Link to={`/item/${description}`}>Detalles</Link>
+                <Link to={`/item/${id}`}>Detalles</Link>
             </footer>    
         </article>
     )
