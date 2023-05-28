@@ -29,5 +29,9 @@ const ItemDetailContainer = () => {
               setLoading(false)
             })
           }, [Id])
+          return (
+            <ItemDetail data={data} />
+            )
         }
+
 export default ItemDetailContainer
