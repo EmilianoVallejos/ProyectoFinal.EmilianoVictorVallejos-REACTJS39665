@@ -1,17 +1,16 @@
-import { Button } from 'bootstrap'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Item = ({id, name, img, price, stock}) => {
+const Item = ({description, title, image, price, stock}) => {
     return (
         <article>
             <header>
                 <h2> 
-                    {name}
+                    {title}
                 </h2>
             </header>
             <picture> 
-                <img src= {img} alt={name}/>
+                <img src= {image} alt={title}/>
             </picture>    
             <section>
                 <p>
@@ -22,7 +21,7 @@ const Item = ({id, name, img, price, stock}) => {
                 </p>
             </section>
             <footer>
-                <Link to={`/item/${id}`}>Detalles</Link>
+                <Link to={`/item/${description}`}>Detalles</Link>
             </footer>    
         </article>
     )
