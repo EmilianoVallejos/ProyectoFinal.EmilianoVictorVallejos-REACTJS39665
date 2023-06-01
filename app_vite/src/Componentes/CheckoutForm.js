@@ -32,15 +32,15 @@ const CheckoutForm = ({onConfirm}) => {
                 Email
                 <input type='email' value={email} onChange={({target})=>setEmail(target.value)}
                 />
-            <label/>
+            </label>
+            <label>
             <div>
                 <button type='submit'> Crear Orden </button>    
             </div>    
-
             </label>
         </form>
     </div>
-)
+    )
 }
 
 export default CheckoutForm

@@ -17,10 +17,10 @@ const ItemDetailContainer = () => {
 
         getDoc(docRef)
             .then (response =>{
-              const data = response.data() 
-              console.log (data) 
-              const productsAdapted = { id: response.id. data}
-              setProduct (productsAdapted)
+              const newItem = {id: response.id,
+              ...response.data(),
+            };
+            setProduct(newItem)
             })
             .catch(error => {
               console.log (error)
@@ -30,7 +30,7 @@ const ItemDetailContainer = () => {
             })
           }, [Id])
           return (
-            <ItemDetail data={data} />
+            <ItemDetail {...product} />
             )
         }
 
