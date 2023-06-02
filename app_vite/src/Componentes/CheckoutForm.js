@@ -1,5 +1,6 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState } from 'react';
+
 
 const CheckoutForm = ({onConfirm}) => {
     const [name, setName]= useState('')

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useContext } from 'react';
-import Cart from '../Cart';
 import CartContext from '../CartContext/CartContext';
 import CartWidget from './CartWidget/CartWidget'
 
