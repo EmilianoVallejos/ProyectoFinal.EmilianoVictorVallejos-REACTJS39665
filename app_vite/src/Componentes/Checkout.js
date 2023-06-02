@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+import React from "react";
+import { useContext, useState } from "react";
 import CartContext from "./CartContext/CartContext";
 import { Timestamp, query, writeBatch } from "firebase/firestore";
 
