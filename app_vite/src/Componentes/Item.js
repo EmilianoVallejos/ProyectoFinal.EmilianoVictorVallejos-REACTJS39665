@@ -9,9 +9,9 @@ const Item = ({id, title, image, price, stock, description}) => {
                     {title}
                 </h2>
             </header>
-            <picture> 
-                <img src= {image} alt={title}/>
-            </picture>    
+                <picture>
+                    <img src= {image} alt={title}/>
+                </picture>
             <section>
                 <p>
                     Descripcion del producto: {description}

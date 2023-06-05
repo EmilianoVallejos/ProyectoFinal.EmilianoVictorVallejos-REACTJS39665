@@ -15,6 +15,7 @@ html, body, #root{
   color: #1a1a1a;
 }
 .header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +24,7 @@ html, body, #root{
   color: #b88d17;
 }
 .header__link {
-  color: #779a25;
+  color: #304206;
   margin-left: 1rem;
 }
 .main {
@@ -50,7 +51,7 @@ width: auto;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #d87811;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -61,7 +62,7 @@ width: auto;
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #0f0f14;
   text-decoration: inherit;
 }
 a:hover {
