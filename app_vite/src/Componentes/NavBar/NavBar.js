@@ -10,7 +10,6 @@ const NavBar = () => {
             <CartProvider>
             <div>
                 <Link to= {"/category/promociones"} className="header__link link">Promociones</Link>
-                <Link to= {"/category/alimento balanceado"} className="header__link link">Alimento Balanceado</Link>
                 <Link to= {"/Cart"} className="header__link link"> Terminar Compra </Link>
                 <Link to= {"/carrito"} className="header__link link">Más productos</Link>
             </div>
