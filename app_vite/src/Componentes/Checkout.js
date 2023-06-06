@@ -39,12 +39,13 @@ const Checkout = () => {
     return <h1>Se está generando su orden. espere unos segundos... </h1>;
   }
   if (orderId) {
-    return <h1>El id de su orden es: {orderId} </h1>;
+      return <h1>El id de su orden es: {orderId} </h1>
+      console.log(orderId);
   }
   return (
     <div>
       <h1>checkout</h1>
-      <Checkoutform onConfirm={createOrder} />
+      <CheckoutForm onConfirm={createOrder} />
     </div>
   );
 };
