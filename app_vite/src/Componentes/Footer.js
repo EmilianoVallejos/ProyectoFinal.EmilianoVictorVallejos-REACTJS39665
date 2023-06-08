@@ -1,8 +1,11 @@
 import React from 'react'
+import { DiGithubBadge } from "react-icons/di";
+
 const Footer = () => {
   return (
   <footer className="footer">
-    <p className="footer__text">Copyright &copy</p>
+          <a href='https://github.com/EmilianoVallejos'> <DiGithubBadge /></a>
+      <p className="footer__text">Copyright &copy</p>
   </footer>
   )
 }

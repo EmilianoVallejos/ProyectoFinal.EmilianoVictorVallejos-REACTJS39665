@@ -5,7 +5,10 @@ import ItemListContainer from './Componentes/ItemListContainer'
 import ItemDetailContainer from './Componentes/ItemDetailContainer'
 import Cart from './Componentes/Cart'
 import Checkout from './Componentes/Checkout'
+import Footer from './Componentes/Footer'
 import { CartProvider } from './Componentes/CartContext/CartContext'
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App(){
     return (<div>
@@ -20,6 +23,8 @@ function App(){
               <Route path='/Checkout' element={<Checkout/>} />
               <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
             </Routes>
+            <ToastContainer/>
+            <Footer/>
           </CartProvider>   
         </BrowserRouter>
       </div> );

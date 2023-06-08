@@ -3,6 +3,7 @@ import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
 import { getDoc, doc } from 'firebase/firestore'
 import { db } from '../firebase'
+import { toast } from 'react-toastify';
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState (null)
@@ -11,6 +12,7 @@ const ItemDetailContainer = () => {
     const {Id} = useParams()
   
     useEffect (()=> {
+      toast.warning ("Oferta por tiempo limitado!",{ theme: "colored", position: 'top-center', autoClose: 2200,})
         setLoading(true)
 
         const docRef = doc (db, 'products', Id)
