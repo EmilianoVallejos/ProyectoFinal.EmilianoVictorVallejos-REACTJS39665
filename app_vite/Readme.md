@@ -22,8 +22,19 @@ ___
 1. Desde la terminal de comandos de la máquina local debe transcribirse lo siguiente: git clone <https://github.com/EmilianoVallejos/ProyectoFinal.EmilianoVictorVallejos-REACTJS39665.git>
 
 2. Para ejecutar: Una vez clonado el proyecto desde GitHub. Abrir una terminal y navegar hasta el directorio del repositorio clonado usando el comando cd <nombre del repositorio>.
+____
+
+# VIDEO PRESENTACIONAL .gif : #
+
+(https://drive.google.com/drive/folders/1kOgBG5DEJ5FH863CpwtnBGJYXWmH_rpF?usp=drive_link)
+____
+
+# DEPLOY: #
+
+<https://proyecto-react-com39665-animalungo.netlify.app/>
 
 ___
+
 ### A CONSIDERARSE: ###
 En ubicación _app_vite>public>backup_: se halla carpeta donde destiné contenido que he decidido prescindir para este proyecto.  
 
